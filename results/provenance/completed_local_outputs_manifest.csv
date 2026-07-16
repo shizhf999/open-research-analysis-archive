@@ -1,0 +1,30 @@
+module_id,module_name,output_file,exists,size_bytes
+M01,Strict PDB accession audit,output/protein_audit/protein_pdb_strict_accession_audit.csv,TRUE,2413
+M01,Strict PDB accession audit,output/protein_audit/protein_pdb_strict_accession_audit_summary.json,TRUE,196
+M02,Verified CSNK1D/P48730 structure preparation,data/protein/csnk1d_verified/,TRUE,NA
+M02,Verified CSNK1D/P48730 structure preparation,output/protein_audit/csnk1d_verified/verified_csnk1d_structure_manifest.csv,TRUE,2784
+M03,Corrected CSNK1D 5OKT redocking,output/docking/redock_csnk1d_verified_5OKT/vina_results_csnk1d_5OKT.csv,TRUE,8086
+M03,Corrected CSNK1D 5OKT redocking,output/docking/redock_csnk1d_verified_5OKT/run_summary.json,TRUE,645
+M04,Corrected CRY2 4MLP redocking,output/docking/redock_cry2_4MLP/vina_results_cry2_4MLP.csv,TRUE,1273
+M05,Molecular negative controls,output/docking/negative_controls/molecular_negative_control_interpretation.csv,TRUE,1336
+M05,Molecular negative controls,output/docking/negative_controls/run_summary.json,TRUE,444
+M06,Functional-interface overlap,output/md/fig6_functional_interface/functional_overlap_summary.csv,TRUE,1288
+M06,Functional-interface overlap,output/md/fig6_functional_interface/run_summary.json,TRUE,1525
+M07,CTI v1 prototype,output/cti/cti_v1_prototype.csv,TRUE,153926
+M07,CTI v1 prototype,output/cti/cti_v1_ranked_environmental_chemicals.csv,TRUE,3209
+M07,CTI v1 prototype,output/cti/README_cti_v1.md,TRUE,3108
+M08,NHANES shift-work variable audit,output/nhanes_exposome/shiftwork_variable_audit.csv,TRUE,1272
+M08,NHANES shift-work variable audit,output/nhanes_exposome/shiftwork_interaction_status.csv,TRUE,516
+M08,NHANES shift-work variable audit,output/nhanes_exposome/README_shiftwork_interaction_audit.md,TRUE,576
+M09,AOP/OECD regulatory gap,output/regulatory/aop_chronodisruption_framework.csv,TRUE,2630
+M09,AOP/OECD regulatory gap,output/regulatory/oecd_echa_endpoint_gap_matrix.csv,TRUE,3183
+M09,AOP/OECD regulatory gap,output/regulatory/discussion_regulatory_implications.md,TRUE,2451
+M10,Figure 1 gateway and chemical priority,output/figures/figure1_gateway/figure1_why_four_chemicals_priority_table.csv,TRUE,4905
+M10,Figure 1 gateway and chemical priority,output/figures/figure1_gateway/Figure1_environmental_chronodisruption_gateway.mmd,TRUE,1375
+M10,Figure 1 gateway and chemical priority,output/figures/figure1_gateway/discussion_why_four_chemicals.md,TRUE,1677
+M11,ToxCast/Tox21 API and field availability audit,output/toxcast/toxcast_tox21_target_matrix.csv,TRUE,10689
+M11,ToxCast/Tox21 API and field availability audit,output/toxcast/toxcast_tox21_api_endpoint_audit.csv,TRUE,2845
+M11,ToxCast/Tox21 API and field availability audit,output/toxcast/toxcast_tox21_assay_metadata_audit.csv,TRUE,2388
+M11,ToxCast/Tox21 API and field availability audit,output/toxcast/toxcast_tox21_ac50_evidence.csv,TRUE,162
+M11,ToxCast/Tox21 API and field availability audit,output/toxcast/toxcast_tox21_status.csv,TRUE,1036
+M11,ToxCast/Tox21 API and field availability audit,output/toxcast/README_toxcast_tox21.md,TRUE,1752

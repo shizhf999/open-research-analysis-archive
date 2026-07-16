@@ -1,0 +1,10 @@
+{
+  "module": "completed_local_results_methods_repro_manifest",
+  "status": "completed",
+  "completed_module_rows": 11,
+  "output_manifest_rows": 29,
+  "all_primary_outputs_exist": true,
+  "depends_on_server_md": false,
+  "mock_or_imputed_values": false,
+  "boundary": "manuscript integration and reproducibility manifest only"
+}

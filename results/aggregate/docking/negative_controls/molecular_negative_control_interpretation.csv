@@ -1,0 +1,10 @@
+control_id,control_class,ligand,control_affinity_kcalmol,true_site_affinity_kcalmol,delta_control_minus_true_kcalmol,comparison,interpretation
+BSA_1AO6,non_clock_protein,BPA,-8.019,,,non-clock background only,promiscuous_binding_background_not_clean_negative
+BSA_1AO6,non_clock_protein,PFOA,-7.717,,,non-clock background only,promiscuous_binding_background_not_clean_negative
+BSA_1AO6,non_clock_protein,Cypermethrin,-8.455,,,non-clock background only,promiscuous_binding_background_not_clean_negative
+GAPDH_1ZNQ,non_clock_protein,BPA,-6.38,,,non-clock background only,weak_to_moderate_non_clock_background
+GAPDH_1ZNQ,non_clock_protein,PFOA,-7.072,,,non-clock background only,promiscuous_binding_background_not_clean_negative
+GAPDH_1ZNQ,non_clock_protein,Cypermethrin,-6.645,,,non-clock background only,weak_to_moderate_non_clock_background
+CRY2_4MLP_scrambled_far_site,scrambled_pocket,Cypermethrin,-4.34,-10.01,5.67,scrambled minus true-site affinity = 5.670 kcal/mol,supports_pocket_specificity
+CSNK1D_5OKT_scrambled_far_site,scrambled_pocket,BPA,-5.165,-7.65,2.4850000000000003,scrambled minus true-site affinity = 2.485 kcal/mol,supports_pocket_specificity
+CSNK1D_5OKT_scrambled_far_site,scrambled_pocket,PFOA,-5.068,-8.765,3.697000000000001,scrambled minus true-site affinity = 3.697 kcal/mol,supports_pocket_specificity

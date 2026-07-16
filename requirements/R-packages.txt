@@ -1,0 +1,12 @@
+# Install from CRAN in an R 4.5.x environment.
+# Versions should be captured with renv only after the final clean environment is verified.
+dplyr
+readr
+ggplot2
+patchwork
+tidyr
+openxlsx
+survey
+meta
+MRPRESSO
+TwoSampleMR

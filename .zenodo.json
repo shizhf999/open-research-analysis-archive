@@ -1,0 +1,22 @@
+{
+  "title": "Open Research Analysis Archive",
+  "description": "A generic, platform-neutral archive containing reproducible analysis code, nonrestricted aggregate result tables, provenance records, and instructions for retrieving public source data. This archive intentionally omits individual-level records, raw public-data mirrors, credentials, remote-computing helpers, binary executables, local package libraries, and large molecular-dynamics trajectory files.",
+  "creators": [
+    {
+      "name": "TO BE COMPLETED BEFORE PUBLICATION"
+    }
+  ],
+  "upload_type": "software",
+  "publication_date": "2026-07-16",
+  "version": "0.1.0",
+  "language": "eng",
+  "license": "TO BE SELECTED BY RIGHTS HOLDERS",
+  "access_right": "open",
+  "keywords": [
+    "reproducible research",
+    "environmental health",
+    "statistical analysis",
+    "computational reproducibility"
+  ],
+  "related_identifiers": []
+}
