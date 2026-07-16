@@ -9,6 +9,8 @@ license: "MIT"
 authors:
   - family-names: "Shi"
     given-names: "Zhongfeng"
-repository-code: "TO BE COMPLETED AFTER GITHUB REPOSITORY CREATION"
-url: "TO BE COMPLETED AFTER ZENODO PUBLICATION"
-identifiers: []
+repository-code: "https://github.com/shizhf999/open-research-analysis-archive"
+url: "https://doi.org/10.5281/zenodo.21389313"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21389313"

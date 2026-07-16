@@ -41,7 +41,7 @@ The scripts write regenerated files to `results/regenerated/`. They resolve the 
 
 ## Citation
 
-Use the final Zenodo DOI after publication. Until then, cite the GitHub repository URL and tagged release version. See `CITATION.cff`.
+The archived `v0.1.2` release is available at https://doi.org/10.5281/zenodo.21389313. Cite this version DOI for exact reproducibility. See `CITATION.cff`.
 
 ## License
 
