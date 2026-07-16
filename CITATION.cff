@@ -7,8 +7,8 @@ date-released: 2026-07-16
 abstract: "A generic archive of reproducible analysis code, aggregate result tables, provenance records, and public-data retrieval instructions."
 license: "MIT"
 authors:
-  - family-names: "TO BE COMPLETED"
-    given-names: "TO BE COMPLETED"
+  - family-names: "Shi"
+    given-names: "Zhongfeng"
 repository-code: "TO BE COMPLETED AFTER GITHUB REPOSITORY CREATION"
 url: "TO BE COMPLETED AFTER ZENODO PUBLICATION"
 identifiers: []
