@@ -7,7 +7,7 @@
 - Added an aggregate-only PAXMIN calibration summary script that regenerates a PDF/PNG/CSV from public result tables.
 - Added build-time replacement of machine-specific project paths in copied CSV provenance fields with `<project-root>`.
 - Raw PAXMIN XPT files, minute trajectories, participant-level matched pairs, and raw-scanning code remain excluded.
-- This preparation requires a new GitHub release and a newly minted Zenodo version DOI; the `v0.1.2` DOI must not be cited for these additions.
+- Published as GitHub release `v0.1.3` and archived at Zenodo DOI https://doi.org/10.5281/zenodo.21429423; the `v0.1.2` DOI must not be cited for these additions.
 
 ## v0.1.2 - 2026-07-16
 
