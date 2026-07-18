@@ -43,7 +43,7 @@ The scripts write regenerated files to `results/regenerated/`. They resolve the 
 
 ## Citation
 
-The archived `v0.1.2` release is available at https://doi.org/10.5281/zenodo.21389313. It predates the PAXMIN aggregate calibration materials. The present `v0.1.3` preparation must receive its own Zenodo version DOI after its GitHub release is published; do not cite the `v0.1.2` DOI for the added materials.
+The archived `v0.1.3` release is available at https://doi.org/10.5281/zenodo.21429423. Cite this version DOI for the aggregate PAXMIN calibration materials and the other contents of this release. The earlier `v0.1.2` DOI (https://doi.org/10.5281/zenodo.21389313) predates the PAXMIN aggregate calibration materials.
 
 ## License
 
