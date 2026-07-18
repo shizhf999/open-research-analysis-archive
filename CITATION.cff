@@ -2,13 +2,13 @@ cff-version: 1.2.0
 message: "If you use this archive, please cite the archived release using its Zenodo DOI."
 title: "Open Research Analysis Archive"
 type: software
-version: "0.1.2"
-date-released: 2026-07-16
+version: "0.1.3"
+date-released: 2026-07-18
 abstract: "A generic archive of reproducible analysis code, aggregate result tables, provenance records, and public-data retrieval instructions."
 license: "MIT"
 authors:
   - family-names: "Shi"
     given-names: "Zhongfeng"
-repository-code: "TO BE COMPLETED AFTER GITHUB REPOSITORY CREATION"
-url: "TO BE COMPLETED AFTER ZENODO PUBLICATION"
+repository-code: "https://github.com/shizhf999/open-research-analysis-archive"
+url: "https://github.com/shizhf999/open-research-analysis-archive"
 identifiers: []

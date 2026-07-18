@@ -6,6 +6,7 @@
 - [ ] Inspect `MANIFEST.sha256` and confirm each file is intended for public release.
 - [ ] Search the final repository for credentials, tokens, emails, absolute local paths, `/root/`, `AutoDL`, `ssh`, `sftp`, `scp`, and `rsync`.
 - [ ] Confirm that no raw downloads, individual-level records, RDS files, trajectories, poses, binaries, package libraries, or remote-execution helpers are tracked.
+- [ ] Confirm that PAXMIN raw XPT files and participant-level hourly-minute pair tables are not tracked; only aggregate calibration tables may be released.
 - [ ] Review all copied documentation for current scientific boundaries and remove any manuscript-specific language that is not wanted in the general archive.
 - [ ] Obtain rights-holder approval for a license; add `LICENSE` and update `CITATION.cff` and `.zenodo.json`.
 - [ ] Replace all `TO BE COMPLETED` fields with author-approved metadata.

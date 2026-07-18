@@ -30,6 +30,12 @@ function Copy-PublicFile {
     }
     New-Item -ItemType Directory -Force -Path (Split-Path -Parent $destination) | Out-Null
     Copy-Item -LiteralPath $source -Destination $destination -Force
+    if ([System.IO.Path]::GetExtension($destination) -ieq '.csv') {
+        $content = [System.IO.File]::ReadAllText($destination, [System.Text.UTF8Encoding]::new($false))
+        $projectRootForward = $ProjectRoot -replace '\\', '/'
+        $content = $content.Replace($ProjectRoot, '<project-root>').Replace($projectRootForward, '<project-root>')
+        [System.IO.File]::WriteAllText($destination, $content, [System.Text.UTF8Encoding]::new($false))
+    }
 }
 
 function Copy-PortableFigureScript {
@@ -67,6 +73,11 @@ $publicFiles = @(
     @{ Source = 'output/nhanes_exposome/exposure_detection_rates.csv'; Destination = 'results/aggregate/nhanes_exposome/exposure_detection_rates.csv' },
     @{ Source = 'output/nhanes_exposome/glm_meta_g_h_strict_detection_results.csv'; Destination = 'results/aggregate/nhanes_exposome/glm_meta_g_h_strict_detection_results.csv' },
     @{ Source = 'output/nhanes_exposome/bpa_creatinine_three_spec_sensitivity.csv'; Destination = 'results/aggregate/nhanes_exposome/bpa_creatinine_three_spec_sensitivity.csv' },
+    @{ Source = 'output/nhanes_exposome/bpa_questionnaire_sensitivity_cycle_results.csv'; Destination = 'results/aggregate/nhanes_exposome/bpa_questionnaire_sensitivity_cycle_results.csv' },
+    @{ Source = 'output/nhanes_exposome/bpa_questionnaire_sensitivity_pooled_results.csv'; Destination = 'results/aggregate/nhanes_exposome/bpa_questionnaire_sensitivity_pooled_results.csv' },
+    @{ Source = 'output/nhanes_exposome/bpa_is_iqr_effect_scale_summary.csv'; Destination = 'results/aggregate/nhanes_exposome/bpa_is_iqr_effect_scale_summary.csv' },
+    @{ Source = 'output/nhanes_exposome/paxmin_hourly_minute_IS_concordance.csv'; Destination = 'results/aggregate/nhanes_exposome/paxmin_hourly_minute_IS_concordance.csv' },
+    @{ Source = 'output/nhanes_exposome/paxmin_hourly_minute_IS_bpa_models.csv'; Destination = 'results/aggregate/nhanes_exposome/paxmin_hourly_minute_IS_bpa_models.csv' },
     @{ Source = 'output/nhanes_exposome/wqs_core5_meta_g_h_results.csv'; Destination = 'results/aggregate/nhanes_exposome/wqs_core5_meta_g_h_results.csv' },
     @{ Source = 'output/nhanes_exposome/bkmr_pip_supplementary.csv'; Destination = 'results/aggregate/nhanes_exposome/bkmr_pip_supplementary.csv' },
     @{ Source = 'output/protein_audit/protein_pdb_strict_accession_audit.csv'; Destination = 'results/aggregate/protein_audit/protein_pdb_strict_accession_audit.csv' },
@@ -94,6 +105,9 @@ Copy-PortableFigureScript `
     -DestinationName 'structural_summary_figures.R' `
     -OutputSourceDirectory 'file.path(proj_dir, "output")' `
     -OutputReleaseDirectory 'file.path(proj_dir, "results", "aggregate")'
+Copy-PublicFile `
+    -RelativePath 'code/10y_public_paxmin_calibration_summary.R' `
+    -DestinationRelativePath 'analysis/paxmin_calibration_summary.R'
 
 $manifestPath = Join-Path $ReleaseRoot 'MANIFEST.sha256'
 Get-ChildItem -LiteralPath $ReleaseRoot -Recurse -File |
